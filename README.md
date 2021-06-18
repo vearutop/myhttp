@@ -2,7 +2,10 @@
 
 [![Build Status](https://github.com/vearutop/myhttp/workflows/test-unit/badge.svg)](https://github.com/vearutop/myhttp/actions?query=branch%3Amaster+workflow%3Atest-unit)
 
-Hashing HTTP fetcher. This is a demo project.
+Hashing HTTP fetcher. This is a demo project. See also [`plt`](https://github.com/vearutop/plt).
+
+This repo has a depencency on `github.com/bool64/dev` for GitHub CI and Makefile features. 
+If you would like to see version without any 3rd party dependencies, please check [`minimal`](https://github.com/vearutop/myhttp/tree/minimal) branch. 
 
 ## Installation
 
