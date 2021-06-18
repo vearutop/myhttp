@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/vearutop/crawlh/internal"
+	"github.com/vearutop/myhttp/internal"
 )
 
 func TestFetcher_Fetch(t *testing.T) {
