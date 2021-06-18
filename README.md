@@ -1,17 +1,36 @@
-# go-template
+# myhttp
 
-[![Build Status](https://github.com/bool64/go-template/workflows/test-unit/badge.svg)](https://github.com/bool64/go-template/actions?query=branch%3Amaster+workflow%3Atest-unit)
-[![Coverage Status](https://codecov.io/gh/bool64/go-template/branch/master/graph/badge.svg)](https://codecov.io/gh/bool64/go-template)
-[![GoDevDoc](https://img.shields.io/badge/dev-doc-00ADD8?logo=go)](https://pkg.go.dev/github.com/bool64/go-template)
-[![Time Tracker](https://wakatime.com/badge/github/bool64/go-template.svg)](https://wakatime.com/badge/github/bool64/go-template)
-![Code lines](https://sloc.xyz/github/bool64/go-template/?category=code)
-![Comments](https://sloc.xyz/github/bool64/go-template/?category=comments)
+[![Build Status](https://github.com/vearutop/myhttp/workflows/test-unit/badge.svg)](https://github.com/vearutop/myhttp/actions?query=branch%3Amaster+workflow%3Atest-unit)
 
-<!--- TODO Update README.md -->
+Hashing HTTP fetcher. This is a demo project.
 
-Project template with GitHub actions for Go.
+## Installation
+
+```
+go get github.com/vearutop/myhttp
+```
+
+Or download binary from [releases](https://github.com/vearutop/myhttp/releases).
 
 ## Usage
 
-Create a new repository from this template, check out it and run `./run_me.sh` to replace template name with name of
-your repository.
+Provide a list of URLs as arguments. Protocol prefix can be omitted and defaults to `http://`.
+
+```
+myhttp example.com https://google.com http://127.0.0.1:1234/foo
+```
+
+Resources are fetched concurrently with a default limit of 10 simultaneous requests. Limit can be controlled
+with `-parallel` flag:
+
+```
+myhttp -parallel 2 example.com https://google.com http://127.0.0.1:1234/foo example2.com example3.com
+```
+
+### Flags
+
+```
+Usage of myhttp:
+  -parallel int
+        maximum number of concurrent requests (default 10)
+```
