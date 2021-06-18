@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/vearutop/myhttp/workflows/test-unit/badge.svg)](https://github.com/vearutop/myhttp/actions?query=branch%3Amaster+workflow%3Atest-unit)
 
-Hashing HTTP fetcher. This is a demo project.
+Hashing HTTP fetcher. This is a demo project. See also [`plt`](https://github.com/vearutop/plt).
 
 ## Installation
 
